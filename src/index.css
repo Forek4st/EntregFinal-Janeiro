@@ -1,12 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
-
 
 body {
   background-color: whitesmoke;
@@ -62,29 +61,29 @@ nav ul li {
   height: 1.5rem;
 }
 
-
-nav ul li .cartIcon{
+nav ul li .cartIcon {
   height: 1.5rem;
-  
+
   width: auto;
   cursor: pointer;
 }
 
 nav ul li .itemCount {
-  height: 1.2rem;
-  width: 1.2rem;
-  background-color: red;
-  color: white;
-  border-radius: 50%;
-  padding: 2px 6px;
-  font-size: .8rem;
-  text-align: center;
+  height: 1.5rem;
+  width: 1.5rem;
   position: absolute;
   top: 15px;
   right: 35px;
+  background-color: red;
+  color: white;
+  font-size: 1rem;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 1rem;
+  text-align: center;
 }
 
-body main .card{
+body main .card {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -94,31 +93,30 @@ body main .card{
   background-color: white;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  
+
   position: relative;
-  img{
+  img {
     width: 100%;
     height: 200px;
     object-fit: contain;
     border-radius: 10px;
   }
-
 }
 
-body main .card .card-body .card-title{
+body main .card .card-body .card-title {
   font-size: 1.5rem;
-  margin: .5rem 0;
+  margin: 0.5rem 0;
 }
 body main .card .card-body .card-text {
   font-size: 1rem;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 body main .card .card-body .btn-primary {
   font-size: 1rem;
-  margin-top: .5rem;
-  padding: .5rem 1rem;
-  background-color:#3e6ae1;
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #3e6ae1;
   color: white;
   border: none;
   cursor: pointer;
