@@ -1,3 +1,4 @@
+import CarWidget from '../carwidget/CarWidget.jsx'
 
 const NavBar = () => {
   return (
@@ -7,12 +8,10 @@ const NavBar = () => {
         <a href="index.html" className="navLogo">
           <img src="" alt="" />
         </a>
-
-     
         <ul>
-          <li className="active"><a href="index.html">Home</a></li>
-          <li><a href="#"></a>Cart</li>
-          
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html">My Account</a></li>
+          <li><CarWidget /></li>      
         </ul>
         </nav>
 
