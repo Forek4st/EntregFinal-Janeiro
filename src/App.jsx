@@ -3,7 +3,7 @@ import NavBar from "./components/navbar/NavBar.jsx";
 import ProductContainer from "./components/products/ProductContainer.jsx";
 import model3 from "./assets/model3.png";
 import modely from "./assets/modely.png";
-import SpecialOffers from "./components/specialoffers/SpecialOffers.jsx";
+import SpecialOffers from "./components/specialoffers/Specialoffers.jsx";
 
 const App = () => {
   return (
@@ -28,7 +28,7 @@ const App = () => {
               </>
             }
           />
-          <Route path="/special-offers" element={<SpecialOffers />} />
+          <Route path="/special-offers" element={SpecialOffers} />
         </Routes>
       </main>
     </Router>
