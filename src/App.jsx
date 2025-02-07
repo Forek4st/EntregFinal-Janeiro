@@ -28,7 +28,7 @@ const App = () => {
               </>
             }
           />
-          <Route path="/special-offers" element={SpecialOffers} />
+          <Route path="/special-offers" element={<SpecialOffers />} />
         </Routes>
       </main>
     </Router>
