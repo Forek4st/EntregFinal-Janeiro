@@ -1,14 +1,17 @@
 import cartIcon from "../../assets/cart-svg.svg";
-
-let cartProducts = [1, 2, 3, 4];
+import { useState, useEffect } from "react";
 
 const CarWidget = () => {
-  const itemCount = cartProducts.length;
+  const [cartProducts, setCartProducts] = useState([]);
+
+  useEffect(() => {
+    setCartProducts(["6"]);
+  }, []);
 
   return (
     <>
       <img src={cartIcon} alt="Cart Icon" className="cartIcon" />
-      <span className="itemCount">{itemCount}</span>
+      <span className="itemCount">{cartProducts}</span>
     </>
   );
 };

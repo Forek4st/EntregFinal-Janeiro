@@ -21,10 +21,10 @@ body main {
   flex-wrap: wrap;
 }
 
-nav {
+body div#root header nav {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: space-around;
   height: 100px;
   background-color: #191916;
   color: white;
@@ -35,26 +35,37 @@ nav {
   right: 0;
   z-index: 1000;
 }
-nav .navLogo {
-  margin-right: auto;
+
+nav div.navLogo {
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
 }
-nav .navLogo img {
-  height: 100px;
+nav div.navLogo img {
+  height: 100%;
   width: auto;
+  filter: brightness(0) invert(1); /* Cambia la imagen a blanca */
 }
+
 nav a {
   color: white;
   text-decoration: none;
   font-size: 1.2rem;
 }
+
 nav ul {
   display: flex;
-  justify-content: flex-end;
+
   align-items: center;
   height: 100%;
-  margin-right: 2.5rem;
+
   gap: 2rem;
+  margin: 0;
+  margin-right: 2.5rem;
 }
+
 nav ul li {
   list-style: none;
   width: fit-content;
@@ -62,8 +73,7 @@ nav ul li {
 }
 
 nav ul li .cartIcon {
-  height: 1.5rem;
-
+  height: 1.2rem;
   width: auto;
   cursor: pointer;
 }
@@ -73,13 +83,12 @@ nav ul li .itemCount {
   width: 1.5rem;
   position: absolute;
   top: 15px;
-  right: 35px;
+  right: 110px;
   background-color: red;
   color: white;
   font-size: 1rem;
   border-radius: 50%;
   padding: 2px 6px;
-  font-size: 1rem;
   text-align: center;
 }
 
@@ -93,20 +102,21 @@ body main .card {
   background-color: white;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-
   position: relative;
-  img {
-    width: 100%;
-    height: 200px;
-    object-fit: contain;
-    border-radius: 10px;
-  }
+}
+
+body main .card img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+  border-radius: 10px;
 }
 
 body main .card .card-body .card-title {
   font-size: 1.5rem;
   margin: 0.5rem 0;
 }
+
 body main .card .card-body .card-text {
   font-size: 1rem;
   margin-bottom: 0.5rem;
@@ -120,4 +130,59 @@ body main .card .card-body .btn-primary {
   color: white;
   border: none;
   cursor: pointer;
+}
+
+body div#root header nav ul li div.dropdown .dropdown-toggle.btn.btn-success {
+  background-color: #191916;
+  border: none;
+  height: 1.5rem;
+  padding: 0;
+  margin: 0;
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.dropdown-menu.show {
+  background-color: #191916;
+}
+
+div.show.dropdown div.dropdown-menu.show a.dropdown-item {
+  color: whitesmoke;
+}
+
+div.show.dropdown div.dropdown-menu.show a.dropdown-item:hover {
+  background-color: #0d6efd;
+}
+
+header nav form {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header nav form div.mb-3.input-group {
+  margin-left: 250px;
+  width: 600px;
+  height: 2rem;
+}
+
+header nav form div.mb-3.input-group input {
+  height: 100%; /* Asegura que el input ocupe toda la altura del contenedor */
+  border: none; /* Elimina el borde interior */
+  box-shadow: none; /* Elimina el borde exterior */
+  outline: none; /* Elimina el borde de enfoque predeterminado */
+}
+
+header nav form div.mb-3.input-group input:focus {
+  border: none; /* Asegura que no haya borde interior al enfocar */
+  box-shadow: none; /* Asegura que no haya borde exterior al enfocar */
+  outline: none; /* Elimina el borde de enfoque predeterminado */
+}
+
+/* Clase personalizada para eliminar el margen inferior sin usar !important */
+
+header nav form div.mb-3.no-margin-bottom.input-group {
+  margin-bottom: 0 !important;
 }
