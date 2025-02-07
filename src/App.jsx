@@ -4,6 +4,7 @@ import ProductContainer from "./components/products/ProductContainer.jsx";
 import model3 from "./assets/model3.png";
 import modely from "./assets/modely.png";
 import SpecialOffers from "./components/specialoffers/SpecialOffers.jsx";
+import MyAccount from "./components/account/MyAccount.jsx";
 
 const App = () => {
   return (
@@ -29,6 +30,7 @@ const App = () => {
             }
           />
           <Route path="/special-offers" element={<SpecialOffers />} />
+          <Route path="/my-account" element={<MyAccount />} />
         </Routes>
       </main>
     </Router>
