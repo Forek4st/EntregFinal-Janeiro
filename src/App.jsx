@@ -1,8 +1,8 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import NavBar from "./components/navbar/NavBar.jsx";
 import ProductContainer from "./components/products/ProductContainer.jsx";
-import model3 from "./assets/model3.png";
-import modely from "./assets/modely.png";
+import macminim4 from "./assets/macminim4.webp";
+import iphone16 from "./assets/iphone16pro.webp";
 import Offers from "./components/offers/Offers.jsx";
 import MyAccount from "./components/account/MyAccount.jsx";
 
@@ -17,14 +17,14 @@ const App = () => {
             element={
               <>
                 <ProductContainer
-                  title="Model 3"
-                  text="Gracias a un exterior actualizado y optimizado para maximizar la eficiencia aerodinámica, podrás recorrer hasta 548 kilómetros (est. EPA) con una sola carga."
-                  img={model3}
+                  title="Mac Mini M4"
+                  text="Compact power with the Mac Mini M4. Equipped with the revolutionary M4 chip, it offers ultra-fast performance and energy efficiency."
+                  img={macminim4}
                 />
                 <ProductContainer
-                  title="Model Y"
-                  text="Disfruta de tu viaje en carretera. Con hasta 497 km (est. EPA) de autonomía con una sola carga, es probable que necesites un descanso antes que tu Model Y."
-                  img={modely}
+                  title="Iphone 16 Pro"
+                  text="Discover the future with the iPhone 16 Pro. With a premium design, 6.7-inch Super Retina XDR display, and the powerful A18 Bionic chip for incredible performance."
+                  img={iphone16}
                 />
               </>
             }
