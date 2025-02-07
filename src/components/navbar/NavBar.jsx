@@ -49,7 +49,7 @@ const NavBar = () => {
             </Dropdown>
           </li>
           <li>
-            <Link to="/my-account">My Account</Link>
+            <Link to="/">My Account</Link>
           </li>
           <li>
             <CarWidget />
