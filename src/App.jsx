@@ -19,11 +19,13 @@ const App = () => {
                 <ProductContainer
                   title="Mac Mini M4"
                   text="Compact power with the Mac Mini M4. Equipped with the revolutionary M4 chip, it offers ultra-fast performance and energy efficiency."
+                  price="From $599"
                   img={macminim4}
                 />
                 <ProductContainer
                   title="Iphone 16 Pro"
                   text="Discover the future with the iPhone 16 Pro. With a premium design, 6.7-inch Super Retina XDR display, and the powerful A18 Bionic chip for incredible performance."
+                  price="From $999"
                   img={iphone16}
                 />
               </>
