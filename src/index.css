@@ -47,6 +47,7 @@ nav div.navLogo img {
   height: 100%;
   width: auto;
   filter: brightness(0) invert(1); /* Cambia la imagen a blanca */
+  padding: 1rem;
 }
 
 nav a {

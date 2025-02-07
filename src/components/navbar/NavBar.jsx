@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Dropdown from "react-bootstrap/Dropdown";
 import CarWidget from "../carwidget/CarWidget.jsx";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -9,23 +10,30 @@ const NavBar = () => {
   return (
     <header>
       <nav>
-        <div className="navLogo">
-          <img src={navLogo} alt="" />
-        </div>
+        <Link to="/">
+          <div className="navLogo">
+            <img
+              src={navLogo}
+              alt="Logo"
+              style={{ height: "100px", width: "auto" }}
+            />
+          </div>
+        </Link>
         <form action="">
           <InputGroup className="mb-3 no-margin-bottom">
             <Form.Control
-              placeholder="Search by category or product name.."
+              placeholder="Search by category or product name"
               className="no-border"
+              style={{ minWidth: "300px" }}
             />
           </InputGroup>
         </form>
         <ul>
           <li>
-            <a href="index.html">Home</a>
+            <Link to="/">Home</Link>
           </li>
           <li>
-            <a href="index.html">Special Offers</a>
+            <Link to="/special-offers">Special Offers</Link>
           </li>
           <li>
             <Dropdown>
@@ -41,9 +49,8 @@ const NavBar = () => {
             </Dropdown>
           </li>
           <li>
-            <a href="index.html">My Account</a>
+            <Link to="/my-account">My Account</Link>
           </li>
-
           <li>
             <CarWidget />
           </li>
