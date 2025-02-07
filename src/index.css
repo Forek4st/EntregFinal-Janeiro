@@ -187,3 +187,47 @@ header nav form div.mb-3.input-group input:focus {
 header nav form div.mb-3.no-margin-bottom.input-group {
   margin-bottom: 0 !important;
 }
+
+.carousel-container {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: calc(100vh - 200px);
+  padding: 0;
+  overflow: hidden;
+}
+
+.carousel-container .carousel {
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-container .carousel-item {
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-container .carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill; /* Asegura que la imagen cubra todo el contenedor manteniendo sus proporciones */
+
+  transition: none; /* Elimina cualquier animación de transición */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.carousel-control-prev {
+  left: 10px;
+}
+
+.carousel-control-next {
+  right: 10px;
+}
