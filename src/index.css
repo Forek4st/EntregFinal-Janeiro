@@ -451,13 +451,13 @@ main.item-container div.list-group {
   margin: 0 auto;
 }
 
-.mac-item-list div.list-group {
+/* .item-container-list div.list-group {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   margin: 0 auto;
   height: calc(100vh - 100px);
   margin-top: 150px;
-}
+} */
 
 @media screen and (min-width: 1080px) and (max-width: 1440px) {
 
@@ -467,10 +467,7 @@ display: grid;
 grid-template-columns: repeat(4, 1fr);
   }
 
-main.mac-item-list div.list-group{
-    display: grid;
-grid-template-columns: repeat(4, 1fr);
-  }
+
 
   main.item-detail div.item-detail-container {
     display: flex;

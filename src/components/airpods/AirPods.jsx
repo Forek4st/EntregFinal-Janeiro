@@ -14,7 +14,7 @@ const Ipad = () => {
   }, []);
 
   return (
-    <main className="mac-item-list">
+    <main className="item-container">
       {products.length > 0 ? (
         <ItemList products={products} />
       ) : (
