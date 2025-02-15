@@ -20,7 +20,7 @@ const NavBar = () => {
           </div>
         </Link>
         <form action="">
-          <InputGroup className="mb-3 no-margin-bottom">
+          <InputGroup className="no-margin-bottom" id="form-group">
             <Form.Control
               placeholder="Search by category or product name"
               className="no-border"
