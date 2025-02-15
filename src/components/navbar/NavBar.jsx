@@ -42,9 +42,21 @@ const NavBar = () => {
               </Dropdown.Toggle>
 
               <Dropdown.Menu>
-                <Dropdown.Item href="#/action-1">Tech</Dropdown.Item>
-                <Dropdown.Item href="#/action-2">Books</Dropdown.Item>
-                <Dropdown.Item href="#/action-3">CDs</Dropdown.Item>
+                <Dropdown.Item as={Link} to="/mac">
+                  Mac
+                </Dropdown.Item>
+                <Dropdown.Item as={Link} to="/ipad">
+                  iPad
+                </Dropdown.Item>
+                <Dropdown.Item as={Link} to="/iphone">
+                  iPhone
+                </Dropdown.Item>
+                <Dropdown.Item as={Link} to="/watch">
+                  Watch
+                </Dropdown.Item>
+                <Dropdown.Item as={Link} to="/airpods">
+                  Airpods
+                </Dropdown.Item>
               </Dropdown.Menu>
             </Dropdown>
           </li>

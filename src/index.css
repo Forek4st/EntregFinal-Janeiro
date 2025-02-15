@@ -1,10 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Inter", sans-serif;
+  letter-spacing: 0.2px;
+}
+small {
+  font-weight: bolder;
 }
 
 body {
@@ -15,8 +19,6 @@ body {
 }
 
 body main {
-  margin: 150px auto auto auto;
-  width: 80%;
   display: flex;
   flex-wrap: wrap;
 }
@@ -53,7 +55,8 @@ nav div.navLogo img {
 nav a {
   color: white;
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1rem;
+  font-weight: 100;
 }
 
 nav ul {
@@ -88,12 +91,13 @@ nav ul li .itemCount {
   background-color: red;
   color: white;
   font-size: 1rem;
+  font-weight: 100;
   border-radius: 50%;
   padding: 2px 6px;
   text-align: center;
 }
 nav ul li a:hover {
-  color: #0d6efd;
+  color: #3e6ae1;
 }
 
 body main .card {
@@ -144,7 +148,8 @@ body div#root header nav ul li div.dropdown .dropdown-toggle.btn.btn-success {
   margin: 0;
   color: white;
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1rem;
+  font-weight: 100;
 }
 
 body
@@ -155,7 +160,7 @@ body
   li
   div.dropdown
   .dropdown-toggle.btn.btn-success:hover {
-  color: #0d6efd;
+  color: #3e6ae1;
 }
 
 .dropdown-menu.show {
@@ -164,10 +169,11 @@ body
 
 div.show.dropdown div.dropdown-menu.show a.dropdown-item {
   color: whitesmoke;
+  text-align: center;
 }
 
 div.show.dropdown div.dropdown-menu.show a.dropdown-item:hover {
-  background-color: #0d6efd;
+  background-color: #3e6ae1;
 }
 
 header nav form {
@@ -208,11 +214,13 @@ header nav form div.mb-3.no-margin-bottom.input-group {
   justify-content: center;
   align-items: center;
   width: 100vw;
-  height: calc(100vh - 200px);
+  height: calc(
+    100vh - 100px
+  ); /* Asegura que ocupe toda la altura de la ventana menos la altura del navbar */
   padding: 0;
   overflow: hidden;
+  margin-top: 100px; /* Ajusta el margen superior para que comience justo debajo del navbar */
 }
-
 .carousel-container .carousel {
   width: 100%;
   height: 100%;
@@ -226,9 +234,9 @@ header nav form div.mb-3.no-margin-bottom.input-group {
 .carousel-container .carousel-item img {
   width: 100%;
   height: 100%;
-  object-fit: fill; /* Asegura que la imagen cubra todo el contenedor manteniendo sus proporciones */
+  object-fit: fill;
 
-  transition: none; /* Elimina cualquier animación de transición */
+  transition: none;
 }
 
 .carousel-control-prev-icon,
@@ -244,4 +252,206 @@ header nav form div.mb-3.no-margin-bottom.input-group {
 
 .carousel-control-next {
   right: 10px;
+}
+
+.mac-greeting {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  margin: 30px auto;
+  h1 {
+    font-size: 3rem;
+  }
+  p {
+    font-size: 1.5rem;
+  }
+}
+
+.carousel-container-mac {
+  width: 100%;
+}
+
+.mac-family {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 30px auto;
+}
+
+.mac-family-cards {
+  display: flex;
+}
+
+.btn-container {
+  display: flex;
+  height: 60px;
+  margin: 0 auto;
+  gap: 10px;
+  margin-top: 10px;
+  button {
+    width: 50%;
+  }
+}
+
+.mac-greeting {
+  p {
+    font-weight: 800;
+    letter-spacing: 0px;
+  }
+}
+
+.mac-main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 150 auto;
+}
+.mac-video {
+  text-align: center;
+  width: 90vw; /* Cambia a 80vw para ocupar el 80% del ancho de la pantalla */
+  height: auto; /* Ajusta la altura automáticamente */
+  margin: 10px auto;
+}
+
+.mac-video video {
+  width: 100%; /* Asegura que el video ocupe el 100% del contenedor */
+  height: 700px; /* Ajusta la altura del video */
+  object-fit: cover; /* Asegura que el video cubra todo el contenedor manteniendo sus proporciones */
+}
+
+.item-count {
+  display: flex;
+  flex-direction: column;
+  margin: 130px auto;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  text-align: center;
+  padding: 10px;
+}
+
+.item-count span {
+  margin: 0px 10px;
+  width: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item-count .controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto;
+  width: fit-content;
+}
+
+.item-count .controls button {
+  padding: 2.5px 5px;
+  background-color: #3e6ae1;
+}
+
+.btn.btn-primary.add-to-cart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #3e6ae1;
+}
+main.item-container {
+  margin-top: 150px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main.item-container div.list-group {
+  grid-gap: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  margin: 0 20px;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.item-detail {
+  width: 100%;
+  height: calc(
+    100vh - 100px
+  ); /* Asegura que ocupe toda la altura de la ventana menos la altura del navbar */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px; /* Ajusta el margen superior para que comience justo debajo del navbar */
+}
+
+.item-detail-container {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  h2 {
+    margin-top: 30px;
+  }
+  p {
+    width: 50%;
+    margin: 10px 0;
+    text-align: center;
+  }
+  .detail-description {
+    text-align: justify;
+  }
+  .card-description-price {
+    margin: 10px 0;
+    text-align: center;
+  }
+  small {
+    margin: 20px 0;
+    text-align: center;
+  }
+  .item-count {
+    margin: 20px 0;
+    width: 100%;
+  }
+  img {
+    width: 200px;
+    height: 200px;
+  }
+}
+*/ .card-description-body {
+  text-align: center;
+}
+
+.not-found {
+  width: 100%;
+  height: calc(100vh - 100px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 10rem;
+  margin: 0 auto;
+}
+
+.mac-item-list div.list-group {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  margin: 0 auto;
+  height: calc(100vh - 100px);
+  margin-top: 150px;
 }

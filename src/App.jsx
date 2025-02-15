@@ -1,41 +1,43 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import NavBar from "./components/navbar/NavBar.jsx";
-import ProductContainer from "./components/products/ProductContainer.jsx";
-import macminim4 from "./assets/macminim4.webp";
-import iphone16 from "./assets/iphone16pro.webp";
+import { CartProvider } from "./context/CartContext";
+
+import ItemListContainer from "./components/products/ItemListContainer.jsx";
+import ItemDetailContainer from "./components/itemdetailcontainer/ItemDetailContainer.jsx";
 import Offers from "./components/offers/Offers.jsx";
-import MyAccount from "./components/account/MyAccount.jsx";
+import Mac from "./components/mac/Mac.jsx";
+import Ipad from "./components/ipad/Ipad.jsx";
+import Iphone from "./components/iphone/Iphone.jsx";
+import Watch from "./components/watch/Watch.jsx";
+import AirPods from "./components/airpods/AirPods.jsx";
 
 const App = () => {
   return (
-    <Router>
-      <NavBar />
-      <main>
+    <CartProvider>
+      <Router>
+        <NavBar />
         <Routes>
+          <Route path="/" element={<ItemListContainer />} />
+          <Route path="/item/:id" element={<ItemDetailContainer />} />
+          <Route path="/special-offers" element={<Offers />} />
+          <Route path="/mac" element={<Mac />} />
+          <Route path="/ipad" element={<Ipad />} />
+          <Route path="/iphone" element={<Iphone />} />
+          <Route path="/watch" element={<Watch />} />
+          <Route path="/airpods" element={<AirPods />} />
           <Route
-            path="/"
+            path="*"
             element={
               <>
-                <ProductContainer
-                  title="Mac Mini M4"
-                  text="Compact power with the Mac Mini M4. Equipped with the revolutionary M4 chip, it offers ultra-fast performance and energy efficiency."
-                  price="From $599"
-                  img={macminim4}
-                />
-                <ProductContainer
-                  title="Iphone 16 Pro"
-                  text="Discover the future with the iPhone 16 Pro. With a premium design, 6.7-inch Super Retina XDR display, and the powerful A18 Bionic chip for incredible performance."
-                  price="From $999"
-                  img={iphone16}
-                />
+                <main className="not-found">
+                  <h1> The page you’re looking for can’t be found.</h1>
+                </main>
               </>
             }
           />
-          <Route path="/special-offers" element={<Offers />} />
-          <Route path="/my-account" element={<MyAccount />} />
         </Routes>
-      </main>
-    </Router>
+      </Router>
+    </CartProvider>
   );
 };
 
