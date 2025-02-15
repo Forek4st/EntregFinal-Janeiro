@@ -7,6 +7,7 @@
   font-family: "Inter", sans-serif;
   letter-spacing: 0.2px;
 }
+
 small {
   font-weight: bolder;
 }
@@ -40,15 +41,15 @@ body div#root header nav {
 
 nav div.navLogo {
   height: 100%;
-
   display: flex;
   align-items: center;
   text-align: center;
 }
+
 nav div.navLogo img {
   height: 100%;
   width: auto;
-  filter: brightness(0) invert(1); /* Cambia la imagen a blanca */
+  filter: brightness(0) invert(1);
   padding: 1rem;
 }
 
@@ -61,10 +62,8 @@ nav a {
 
 nav ul {
   display: flex;
-
   align-items: center;
   height: 100%;
-
   gap: 2rem;
   margin: 0;
   margin-right: 2.5rem;
@@ -96,6 +95,7 @@ nav ul li .itemCount {
   padding: 2px 6px;
   text-align: center;
 }
+
 nav ul li a:hover {
   color: #3e6ae1;
 }
@@ -190,19 +190,17 @@ header nav form div.mb-3.input-group {
 }
 
 header nav form div.mb-3.input-group input {
-  height: 100%; /* Asegura que el input ocupe toda la altura del contenedor */
-  border: none; /* Elimina el borde interior */
-  box-shadow: none; /* Elimina el borde exterior */
-  outline: none; /* Elimina el borde de enfoque predeterminado */
+  height: 100%;
+  border: none;
+  box-shadow: none;
+  outline: none;
 }
 
 header nav form div.mb-3.input-group input:focus {
-  border: none; /* Asegura que no haya borde interior al enfocar */
-  box-shadow: none; /* Asegura que no haya borde exterior al enfocar */
-  outline: none; /* Elimina el borde de enfoque predeterminado */
+  border: none;
+  box-shadow: none;
+  outline: none;
 }
-
-/* Clase personalizada para eliminar el margen inferior sin usar !important */
 
 header nav form div.mb-3.no-margin-bottom.input-group {
   margin-bottom: 0 !important;
@@ -214,13 +212,12 @@ header nav form div.mb-3.no-margin-bottom.input-group {
   justify-content: center;
   align-items: center;
   width: 100vw;
-  height: calc(
-    100vh - 100px
-  ); /* Asegura que ocupe toda la altura de la ventana menos la altura del navbar */
+  height: calc(100vh - 100px);
   padding: 0;
   overflow: hidden;
-  margin-top: 100px; /* Ajusta el margen superior para que comience justo debajo del navbar */
+  margin-top: 100px;
 }
+
 .carousel-container .carousel {
   width: 100%;
   height: 100%;
@@ -235,7 +232,6 @@ header nav form div.mb-3.no-margin-bottom.input-group {
   width: 100%;
   height: 100%;
   object-fit: fill;
-
   transition: none;
 }
 
@@ -261,12 +257,16 @@ header nav form div.mb-3.no-margin-bottom.input-group {
   text-align: center;
   width: 100%;
   margin: 30px auto;
-  h1 {
-    font-size: 3rem;
-  }
-  p {
-    font-size: 1.5rem;
-  }
+}
+
+.mac-greeting h1 {
+  font-size: 3rem;
+}
+
+.mac-greeting p {
+  font-size: 1.5rem;
+  font-weight: 800;
+  letter-spacing: 0px;
 }
 
 .carousel-container-mac {
@@ -291,16 +291,10 @@ header nav form div.mb-3.no-margin-bottom.input-group {
   margin: 0 auto;
   gap: 10px;
   margin-top: 10px;
-  button {
-    width: 50%;
-  }
 }
 
-.mac-greeting {
-  p {
-    font-weight: 800;
-    letter-spacing: 0px;
-  }
+.btn-container button {
+  width: 50%;
 }
 
 .mac-main {
@@ -309,17 +303,18 @@ header nav form div.mb-3.no-margin-bottom.input-group {
   width: 100%;
   margin: 150 auto;
 }
+
 .mac-video {
   text-align: center;
-  width: 90vw; /* Cambia a 80vw para ocupar el 80% del ancho de la pantalla */
-  height: auto; /* Ajusta la altura automáticamente */
+  width: 90vw;
+  height: auto;
   margin: 10px auto;
 }
 
 .mac-video video {
-  width: 100%; /* Asegura que el video ocupe el 100% del contenedor */
-  height: 700px; /* Ajusta la altura del video */
-  object-fit: cover; /* Asegura que el video cubra todo el contenedor manteniendo sus proporciones */
+  width: 100%;
+  height: 700px;
+  object-fit: cover;
 }
 
 .item-count {
@@ -361,18 +356,19 @@ header nav form div.mb-3.no-margin-bottom.input-group {
   align-items: center;
   background-color: #3e6ae1;
 }
+
 main.item-container {
   margin-top: 150px;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+
 main.item-container div.list-group {
   grid-gap: 10px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(6, 1fr);
   justify-content: center;
   align-items: center;
   margin: 0 20px;
@@ -388,14 +384,12 @@ main.item-container div.list-group {
 
 .item-detail {
   width: 100%;
-  height: calc(
-    100vh - 100px
-  ); /* Asegura que ocupe toda la altura de la ventana menos la altura del navbar */
+  height: calc(100vh - 100px);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 100px; /* Ajusta el margen superior para que comience justo debajo del navbar */
+  margin-top: 100px;
 }
 
 .item-detail-container {
@@ -405,35 +399,43 @@ main.item-container div.list-group {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  h2 {
-    margin-top: 30px;
-  }
-  p {
-    width: 50%;
-    margin: 10px 0;
-    text-align: center;
-  }
-  .detail-description {
-    text-align: justify;
-  }
-  .card-description-price {
-    margin: 10px 0;
-    text-align: center;
-  }
-  small {
-    margin: 20px 0;
-    text-align: center;
-  }
-  .item-count {
-    margin: 20px 0;
-    width: 100%;
-  }
-  img {
-    width: 200px;
-    height: 200px;
-  }
 }
-*/ .card-description-body {
+
+.item-detail-container h2 {
+  margin-top: 30px;
+}
+
+.item-detail-container p {
+  width: 50%;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.item-detail-container .detail-description {
+  text-align: justify;
+}
+
+.item-detail-container .card-description-price {
+  margin: 10px 0;
+  text-align: center;
+}
+
+.item-detail-container small {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.item-detail-container .item-count {
+  margin: 20px 0;
+  width: 100%;
+}
+
+.item-detail-container img {
+  width: 200px;
+  height: 200px;
+}
+
+.card-description-body {
   text-align: center;
 }
 
@@ -443,7 +445,6 @@ main.item-container div.list-group {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
   font-size: 10rem;
   margin: 0 auto;
 }
