@@ -456,3 +456,46 @@ main.item-container div.list-group {
   height: calc(100vh - 100px);
   margin-top: 150px;
 }
+
+@media screen and (min-width: 1080px) and (max-width: 1440px) {
+
+
+main.item-container div.list-group {
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+  }
+
+main.mac-item-list div.list-group{
+    display: grid;
+grid-template-columns: repeat(4, 1fr);
+  }
+
+  main.item-detail div.item-detail-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Ocupa el 100% de la altura del contenedor padre */
+    width: 100%;
+  }
+
+  main.item-detail{
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Ocupa el 100% de la altura del contenedor padre */
+    width: 100%;
+    margin: 130px auto 50px auto;
+  }
+
+  .item-detail-container .item-count{
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  .item-detail-container p {
+    margin: 5px;
+  }
+  
+  .item-detail-container small{
+    margin: 2px;
+  }
+ 
+}
