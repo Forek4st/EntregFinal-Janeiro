@@ -105,7 +105,7 @@ body main .card {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 1rem;
+  height: 100%;
   padding: 1rem;
   background-color: white;
   border-radius: 10px;
@@ -132,7 +132,7 @@ body main .card .card-body .card-text {
 
 body main .card .card-body .btn-primary {
   font-size: 1rem;
-  margin-top: 0.5rem;
+  margin-top: 1rem;
   padding: 0.5rem 1rem;
   background-color: #3e6ae1;
   color: white;
@@ -371,6 +371,7 @@ main.item-container div.list-group {
   grid-gap: 10px;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: auto;
   justify-content: center;
   align-items: center;
   margin: 0 20px;
