@@ -7,6 +7,14 @@
   font-family: "Inter", sans-serif;
   letter-spacing: 0.2px;
 }
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 
 small {
   font-weight: bolder;
@@ -86,7 +94,7 @@ nav ul li .itemCount {
   width: 1.5rem;
   position: absolute;
   top: 15px;
-  right: 110px;
+  right: 150px;
   background-color: red;
   color: white;
   font-size: 1rem;
@@ -202,8 +210,7 @@ header nav form div.mb-3.input-group input:focus {
   outline: none;
 }
 
-
-#form-group{
+#form-group {
   margin-bottom: 0;
   width: 600px;
 }
@@ -322,12 +329,18 @@ header nav form div.mb-3.input-group input:focus {
 .item-count {
   display: flex;
   flex-direction: column;
-  margin: 130px auto;
+
   justify-content: center;
   align-items: center;
   width: 20%;
   text-align: center;
   padding: 10px;
+  margin: 0 auto;
+}
+
+.detail-description {
+  text-align: justify;
+  line-height: 2rem;
 }
 
 .item-count span {
@@ -365,6 +378,7 @@ main.item-container {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  animation: fadeIn 1s ease-in-out;
 }
 
 main.item-container div.list-group {
@@ -376,6 +390,24 @@ main.item-container div.list-group {
   align-items: center;
   margin: 0 20px;
 }
+main.item-container div.list-group div.card button {
+  cursor: pointer;
+  img {
+    cursor: pointer;
+  }
+}
+main.item-container div.list-group div.card img {
+  cursor: pointer;
+}
+
+main.item-container div.list-group div.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+main.item-container div.list-group div.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
 .card-body {
   display: flex;
@@ -385,18 +417,9 @@ main.item-container div.list-group {
   text-align: center;
 }
 
-.item-detail {
+main .item-detail {
   width: 100%;
   height: calc(100vh - 100px);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 100px;
-}
-
-.item-detail-container {
-  width: 80%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -404,41 +427,38 @@ main.item-container div.list-group {
   margin: 0 auto;
 }
 
-.item-detail-container h2 {
-  margin-top: 30px;
-}
+.item-detail-container {
+  width: 80%;
+  height: calc(100vh - 100px);
 
-.item-detail-container p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 100px;
+  animation: fadeIn 1s ease-in-out;
+}
+.item-detail-left {
+  display: flex;
+  justify-content: center;
   width: 50%;
-  margin: 10px 0;
-  text-align: center;
 }
 
-.item-detail-container .detail-description {
-  text-align: justify;
+main.item-detail
+  div.item-detail-container
+  div.item-detail-left
+  img.item-detail-left-img {
+  width: 400px;
+  height: auto;
 }
 
-.item-detail-container .card-description-price {
-  margin: 10px 0;
-  text-align: center;
-}
-
-.item-detail-container small {
-  margin: 20px 0;
-  text-align: center;
-}
-
-.item-detail-container .item-count {
-  margin: 20px 0;
-  width: 100%;
-}
-
-.item-detail-container img {
-  width: 200px;
-  height: 200px;
-}
-
-.card-description-body {
+.item-detail-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: start;
+  width: 50%;
+  display: flex;
   text-align: center;
 }
 
@@ -452,40 +472,22 @@ main.item-container div.list-group {
   margin: 0 auto;
 }
 
-/* .item-container-list div.list-group {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  margin: 0 auto;
-  height: calc(100vh - 100px);
-  margin-top: 150px;
-} */
-
-@media screen and (min-width: 1080px) and (max-width: 1440px) {
-
-
-main.item-container div.list-group {
-display: grid;
-grid-template-columns: repeat(4, 1fr);
+@media screen and (min-width: 1080px) and (max-width: 1600px) {
+  main.item-container div.list-group {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2.5rem;
+    margin-bottom: 2.5rem;
   }
 
-
-
-  main.item-detail div.item-detail-container {
+  main.item-detail {
     display: flex;
     flex-direction: column;
     height: 100%; /* Ocupa el 100% de la altura del contenedor padre */
     width: 100%;
   }
 
-  main.item-detail{
-    display: flex;
-    flex-direction: column;
-    height: 100%; /* Ocupa el 100% de la altura del contenedor padre */
-    width: 100%;
-    margin: 130px auto 50px auto;
-  }
-
-  .item-detail-container .item-count{
+  .item-detail-container .item-count {
     padding: 0;
     margin: 0 auto;
   }
@@ -493,9 +495,22 @@ grid-template-columns: repeat(4, 1fr);
   .item-detail-container p {
     margin: 5px;
   }
-  
-  .item-detail-container small{
+
+  .item-detail-container small {
     margin: 2px;
   }
- 
+  nav ul li .itemCount {
+    height: 1.5rem;
+    width: 1.5rem;
+    position: absolute;
+    top: 15px;
+    right: 80px;
+    background-color: red;
+    color: white;
+    font-size: 1rem;
+    font-weight: 100;
+    border-radius: 50%;
+    padding: 2px 6px;
+    text-align: center;
+  }
 }

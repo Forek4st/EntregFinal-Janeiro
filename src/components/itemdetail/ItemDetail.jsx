@@ -14,14 +14,20 @@ const ItemDetail = ({ id, name, description, price, category, image }) => {
   };
 
   return (
-    <div className="item-detail-container">
-      <img src={image} alt={name} />
-      <h2>{name}</h2>
-      <p className="detail-description">{description}</p>
-      <p>From: {price}</p>
-      <p>Category: {category}</p>
-      <small>Max 1 Product</small>
-      <ItemCount max={1} initial={1} onAdd={handleAddToCart} />
+    <>
+      <div className="item-detail-container">
+        <div className="item-detail-left">
+          <img src={image} alt={name} className="item-detail-left-img" />
+        </div>
+        <div className="item-detail-right">
+          <h2>{name}</h2>
+          <p className="detail-description">{description}</p>
+          <p>From: {price}</p>
+          <p>Category: {category}</p>
+          <ItemCount max={3} initial={1} onAdd={handleAddToCart} />
+        </div>
+      </div>
+
       <ToastContainer
         position="bottom-right"
         autoClose={5000}
@@ -33,7 +39,7 @@ const ItemDetail = ({ id, name, description, price, category, image }) => {
         draggable
         pauseOnHover
       />
-    </div>
+    </>
   );
 };
 
