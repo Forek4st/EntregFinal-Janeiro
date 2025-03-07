@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import Dropdown from "react-bootstrap/Dropdown";
 import CarWidget from "../carwidget/CarWidget.jsx";
@@ -6,7 +7,15 @@ import Form from "react-bootstrap/Form";
 import InputGroup from "react-bootstrap/InputGroup";
 import navLogo from "../../assets/pngegg.png";
 
-const NavBar = () => {
+const NavBar = ({ onSearch }) => {
+  const [searchTerm, setSearchTerm] = useState("");
+
+  const handleInputChange = (event) => {
+    const term = event.target.value;
+    setSearchTerm(term);
+    onSearch(term);
+  };
+
   return (
     <header>
       <nav>
@@ -19,15 +28,15 @@ const NavBar = () => {
             />
           </div>
         </Link>
-        <form action="">
-          <InputGroup className="no-margin-bottom" id="form-group">
-            <Form.Control
-              placeholder="Search by category or product name"
-              className="no-border"
-              style={{ minWidth: "300px" }}
-            />
-          </InputGroup>
-        </form>
+        <InputGroup className="no-margin-bottom" id="form-group">
+          <Form.Control
+            placeholder="Search by product name"
+            className="no-border"
+            style={{ minWidth: "300px" }}
+            value={searchTerm}
+            onChange={handleInputChange}
+          />
+        </InputGroup>
         <ul>
           <li>
             <Link to="/">Home</Link>

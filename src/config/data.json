@@ -1,0 +1,316 @@
+{
+    
+    "products": [
+        {
+            "id": 1,
+            "name": "iPad Pro 13″ (M4) Wi‑Fi",
+            "description": "The iPad Pro 13″ (M4) Wi‑Fi features an Ultra Retina XDR display that offers stunning visuals with high brightness and contrast. Powered by the M4 chip, it delivers exceptional performance for multitasking, gaming, and creative work. The 12 MP camera ensures high-quality photos and videos, while Face id provides secure authentication. This model is also compatible with the Apple Pencil Pro, making it perfect for artists and note-takers.",
+            "price": 1625,
+            "category": "Tablets",
+            "image": "https://www.apple.com/v/ipad/compare/ah/images/overview/techspecs_ipad_pro_13_m4__d1cups0n7loy_large.jpg"
+        
+          },
+          {
+            "id": 2,
+            "name": "iPad Pro 13″ (M4) Wi‑Fi + Cellular",
+            "description": "The iPad Pro 13″ (M4) Wi‑Fi + Cellular offers all the features of the Wi‑Fi model, with the added benefit of cellular connectivity. Stay connected on the go with 5G support, and enjoy the same Ultra Retina XDR display, M4 chip performance, and 12 MP camera. Face id ensures your device is secure, and compatibility with the Apple Pencil Pro makes it ideal for creative professionals.",
+            "price": 1825,
+            "category": "Tablets",
+            "image": "https://www.apple.com/v/ipad/compare/ah/images/overview/techspecs_ipad_pro_13_m4__d1cups0n7loy_large.jpg"
+            
+          },
+          {
+            "id": 3,
+            "name": "iPhone 13 Pro Max",
+            "description": "The iPhone 13 Pro Max features a 6.7-inch Super Retina XDR display, A15 Bionic chip, and a Pro camera system with 12 MP Ultra Wide, Wide, and Telephoto cameras. It offers up to 1TB of storage and supports 5G connectivity.",
+            "price": 1399,
+            "category": "Smartphones",
+            "image": "https://www.apple.com/v/iphone/compare/ai/images/overview/compare_iphone13_pro_max_sierra_blue__buvwjootba76_large_2x.jpg"
+            
+          },
+          {
+            "id": 4,
+            "name": "MacBook Pro 16″ (M1 Max)",
+            "description": "The MacBook Pro 16″ (M1 Max) features a stunning Liquid Retina XDR display, the powerful M1 Max chip, up to 64GB of unified memory, and up to 8TB of storage. It is designed for professionals who need the highest performance for demanding tasks.",
+            "price": 3499,
+            "category": "Laptops",
+            "image": "https://www.apple.com/v/mac/compare/ae/images/overview/compare_macbook_pro_14_silver__vhx3tykmuluu_large_2x.jpg"
+           
+          },
+          {
+            "id": 5,
+            "name": "Apple Watch Series 7",
+            "description": "The Apple Watch Series 7 features a larger, always-on Retina display, new health and fitness tracking capabilities, and faster charging. It is available in various finishes and supports cellular connectivity.",
+            "price": 399,
+            "category": "Smartwatches",
+            "image": "https://www.apple.com/v/watch/compare/ag/images/overview/compare_watch_series_7_aluminum_green__fe2itxftdqi6_large_2x.jpg"
+        
+          },
+          {
+            "id": 6,
+            "name": "AirPods Pro",
+            "description": "The AirPods Pro feature active noise cancellation, transparency mode, and a customizable fit with silicone tips. They offer superior sound quality and are sweat and water-resistant.",
+            "price": 249,
+            "category": "Headphones",
+            "image": "https://www.apple.com/v/airpods/compare/g/images/overview/airpods_2gen_white__benan2ckzxyq_large_2x.png"
+          },
+          {
+            "id": 7,
+            "name": "iPad Air (4th generation)",
+            "description": "The iPad Air (4th generation) features a 10.9-inch Liquid Retina display, A14 Bionic chip, and support for the Apple Pencil (2nd generation) and Magic Keyboard. It offers a great balance of performance and portability.",
+            "price": 599,
+            "category": "Tablets",
+            "image": "https://www.apple.com/v/ipad/compare/ai/images/overview/ipad_air_4th_gen_green__dm69hvp2vj6u_large_2x.jpg"
+            
+          },
+          {
+            "id": 8,
+            "name": "iMac 24″ (M1)",
+            "description": "The iMac 24″ (M1) features a stunning 4.5K Retina display, the powerful M1 chip, and a sleek, colorful design. It is perfect for both work and play, offering exceptional performance and a vibrant visual experience.",
+            "price": 1299,
+            "category": "Desktops",
+            "image": "https://www.apple.com/v/mac/compare/ae/images/overview/compare_imac_24_purple__f56pcy1kztme_large_2x.jpg"
+          },
+          {
+            "id": 9,
+            "name": "Mac Mini (M1)",
+            "description": "The Mac Mini (M1) packs incredible performance into a compact design. Featuring the M1 chip, it delivers up to 3x faster CPU performance and up to 6x faster graphics. It is perfect for both home and office use.",
+            "price": 699,
+            "category": "Desktops",
+            "image": "https://www.apple.com/v/mac/compare/ae/images/overview/compare_mac_mini_silver__9j9m9a81nf66_large_2x.jpg"
+          },
+          {
+            "id": 10,
+            "name": "Apple TV 4K",
+            "description": "The Apple TV 4K brings the best of TV together with your favorite Apple devices and services. Enjoy stunning 4K HDR picture quality and immersive sound with Dolby Atmos. It also supports Apple Arcade, Apple Fitness+, and Apple Music.",
+            "price": 179,
+            "category": "Entertainment",
+            "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/apple-tv-4k-202210?wid=484&hei=170&fmt=png-alpha&.v=1664845630648"
+          },
+          {
+            "id": 11,
+            "name": "HomePod mini",
+            "description": "The HomePod mini delivers room-filling sound in a compact design. It features Siri for voice control, seamless integration with Apple devices, and smart home capabilities. It is available in multiple colors to match your style.",
+            "price": 99,
+            "category": "Headphones",
+            "image": "https://www.apple.com/v/homepod/p/images/overview/hero__ernd10zm1dsi_large_2x.jpg"
+          },
+          {
+            "id": 12,
+            "name": "Magic Keyboard for iPad Pro 12.9″",
+            "description": "The Magic Keyboard for iPad Pro 12.9″ features a floating cantilever design, backlit keys, and a built-in trackpad. It provides a comfortable typing experience and enhances productivity with its seamless integration with the iPad Pro.",
+            "price": 349,
+            "category": "Accessories",
+            "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MQDP3LA?wid=2000&hei=2000&fmt=jpeg&qlt=90&.v=1665496579571"
+          },
+          {
+            "id": 13,
+            "name": "MacBook Air 13” (M3)",
+            "description": "The MacBook Air 13” (M3) features a 13.6″ Liquid Retina display that offers stunning visuals with high brightness and contrast. Powered by the Apple M3 chip, it delivers exceptional performance for multitasking, gaming, and creative work. The device includes Touch id for secure authentication and offers up to 2 TB of storage, making it perfect for professionals and students alike.",
+            "price": 1299,
+            "category": "Laptops",
+            "image": "https://www.apple.com/v/mac/compare/ab/images/overview/all_models_macbook_air_m3_15__ep89l3ndmd2e_large_2x.jpg"
+          },
+          {
+            "id": 14,
+            "name": "MacBook Air 13” (M2)",
+            "description": "The MacBook Air 13” (M2) features a 13.6″ Liquid Retina display that offers stunning visuals with high brightness and contrast. Powered by the Apple M2 chip, it delivers exceptional performance for multitasking, gaming, and creative work. The device includes Touch id for secure authentication and offers up to 2 TB of storage, making it perfect for professionals and students alike.",
+            "price": 1150,
+            "category": "Laptops",
+            "image": "https://www.apple.com/v/mac/compare/ab/images/overview/all_models_macbook_air_m3_15__ep89l3ndmd2e_large_2x.jpg"
+          },
+          {
+            "id": 15,
+            "name": "MacBook Air 15” (M3)",
+            "description": "The MacBook Air 15” (M3) features a 15.3″ Liquid Retina display that offers stunning visuals with high brightness and contrast. Powered by the Apple M3 chip, it delivers exceptional performance for multitasking, gaming, and creative work. The device includes Touch id for secure authentication and offers up to 2 TB of storage, making it perfect for professionals and students alike.",
+            "price": 1600,
+            "category": "Laptops",
+            "image": "https://www.apple.com/v/mac/compare/ab/images/overview/all_models_macbook_air_m3_15__ep89l3ndmd2e_large_2x.jpg"
+          },
+          {
+            "id": 16,
+            "name": "MacBook Pro 14” (M4)",
+            "description": "The MacBook Pro 14” (M4) features a 14.2″ Liquid Retina XDR display that offers stunning visuals with high brightness and contrast. Powered by the Apple M4 chip, it delivers exceptional performance for multitasking, gaming, and creative work. The device includes Touch id for secure authentication and offers up to 2 TB of storage, making it perfect for professionals and students alike.",
+            "price": 1900,
+            "category": "Laptops",
+            "image": "https://www.apple.com/v/mac/compare/ab/images/overview/all_models_macbook_pro_14_m4__gnf5h44gp7qu_large_2x.jpg"
+          },
+          {
+            "id": 17,
+            "name": "MacBook Pro 14” (M4 Pro or M4 Max)",
+            "description": "The MacBook Pro 14” (M4 Pro or M4 Max) features a 14.2″ Liquid Retina XDR display that offers stunning visuals with high brightness and contrast. Powered by the Apple M4 Pro or M4 Max chip, it delivers exceptional performance for multitasking, gaming, and creative work. The device includes Touch id for secure authentication and offers up to 8 TB of storage, making it perfect for professionals and students alike.",
+            "price": 2400,
+            "category": "Laptops",
+            "image": "https://www.apple.com/v/mac/compare/ab/images/overview/all_models_macbook_pro_14_m4__gnf5h44gp7qu_large_2x.jpg"
+          },
+          {
+            "id": 18,
+            "name": "MacBook Pro 16” (M4 Pro or M4 Max)",
+            "description": "The MacBook Pro 16” (M4 Pro or M4 Max) features a 16.2″ Liquid Retina XDR display that offers stunning visuals with high brightness and contrast. Powered by the Apple M4 Pro or M4 Max chip, it delivers exceptional performance for multitasking, gaming, and creative work. The device includes Touch id for secure authentication and offers up to 8 TB of storage, making it perfect for professionals and students alike.",
+            "price": 3000,
+            "category": "Laptops",
+            "image": "https://www.apple.com/v/mac/compare/ab/images/overview/all_models_macbook_pro_14_m4__gnf5h44gp7qu_large_2x.jpg"
+          },
+          {
+            "id": 19,
+            "name": "iMac (M4, two ports)",
+            "description": "The iMac (M4, two ports) features a 24″ Retina 4.5K display that offers stunning visuals with high brightness and contrast. Powered by the Apple M4 chip, it delivers exceptional performance for multitasking, gaming, and creative work. The device includes up to 1 TB of storage, making it perfect for professionals and students alike.",
+            "price": 1600,
+            "category": "Desktops",
+            "image": "https://www.apple.com/v/mac/compare/ab/images/overview/all_models_imac_24_m4__cusxw6p9ffgy_large_2x.jpg"
+          },
+          {
+            "id": 20,
+            "name": "iMac (M4, four ports)",
+            "description": "The iMac (M4, four ports) features a 24″ Retina 4.5K display that offers stunning visuals with high brightness and contrast. Powered by the Apple M4 chip, it delivers exceptional performance for multitasking, gaming, and creative work. The device includes up to 2 TB of storage, making it perfect for professionals and students alike.",
+            "price": 1850,
+            "category": "Desktops",
+            "image": "https://www.apple.com/v/mac/compare/ab/images/overview/all_models_imac_24_m4__cusxw6p9ffgy_large_2x.jpg"
+          },
+          {
+            "id": 21,
+            "name": "Mac mini (M4 or M4 Pro)",
+            "description": "The Mac mini (M4 or M4 Pro) features the Apple M4 or M4 Pro chip, delivering exceptional performance for multitasking, gaming, and creative work. The device includes up to 8 TB of storage, making it perfect for professionals and students alike.",
+            "price": 725,
+            "category": "Desktops",
+            "image": "https://www.apple.com/v/mac/compare/ab/images/overview/all_models_mac_mini_m4__d16yr1jj7x26_large_2x.jpg"
+          },
+          {
+            "id": 22,
+            "name": "Mac Studio (M2 Max or M2 Ultra)",
+            "description": "The Mac Studio (M2 Max or M2 Ultra) features the Apple M2 Max or M2 Ultra chip, delivering exceptional performance for multitasking, gaming, and creative work. The device includes up to 8 TB of storage, making it perfect for professionals and students alike.",
+            "price": 2500,
+            "category": "Desktops",
+            "image": "https://www.apple.com/v/mac/compare/ab/images/overview/all_models_mac_studio__buxgc3l6pw6a_large_2x.jpg"
+          },
+          {
+            "id": 23,
+            "name": "Mac Pro (M2 Ultra)",
+            "description": "The Mac Pro (M2 Ultra) features the Apple M2 Ultra chip, delivering exceptional performance for multitasking, gaming, and creative work. The device includes up to 8 TB of storage, making it perfect for professionals and students alike.",
+            "price": 8250,
+            "category": "Desktops",
+            "image": "https://www.apple.com/v/mac/compare/ab/images/overview/all_models_mac_pro__ducir600vfiq_large_2x.jpg"
+          },
+          {
+            "id": 24,
+            "name": "iPhone 16 Pro",
+            "description": "The iPhone 16 Pro features a 48 MP Fusion camera with 5x telephoto, offering stunning photo and video capabilities. Powered by the A18 Pro chip, it delivers exceptional performance for multitasking, gaming, and creative work. The device includes Face id for secure authentication and offers a sleek, modern design.",
+            "price": 1300,
+            "category": "Smartphones",
+            "image": "https://www.apple.com/v/iphone/compare/ah/images/overview/compare_iphone16_pro_black_titanium__ffs0ixp5spym_large_2x.jpg"
+          },
+          {
+            "id": 25,
+            "name": "iPhone 16",
+            "description": "The iPhone 16 features a 48 MP Fusion camera with 2x telephoto, offering stunning photo and video capabilities. Powered by the A18 chip, it delivers exceptional performance for multitasking, gaming, and creative work. The device includes Face id for secure authentication and offers a sleek, modern design.",
+            "price": 1000,
+            "category": "Smartphones",
+            "image": "https://www.apple.com/v/iphone/compare/ah/images/overview/compare_iphone16_black__ghc0maxm7y62_large_2x.jpg"
+          },
+          {
+            "id": 26,
+            "name": "iPhone 15",
+            "description": "The iPhone 15 features a 48 MP main camera, offering stunning photo and video capabilities. Powered by the A16 Bionic chip, it delivers exceptional performance for multitasking, gaming, and creative work. The device includes Face id for secure authentication and offers a sleek, modern design.",
+            "price": 875,
+            "category": "Smartphones",
+            "image": "https://www.apple.com/v/iphone/compare/ah/images/overview/compare_iphone15_black__dctrrofz8vwy_large_2x.jpg"
+          },
+          {
+            "id": 27,
+            "name": "iPhone 14",
+            "description": "The iPhone 14 features a 12 MP main camera, offering stunning photo and video capabilities. Powered by the A15 Bionic chip, it delivers exceptional performance for multitasking, gaming, and creative work. The device includes Face id for secure authentication and offers a sleek, modern design.",
+            "price": 750,
+            "category": "Smartphones",
+            "image": "https://www.apple.com/v/iphone/compare/ah/images/overview/compare_iphone14_red__ebv1f0m4gwmu_large_2x.jpg"
+          },
+          {
+            "id": 28,
+            "name": "iPhone SE",
+            "description": "The iPhone SE features a compact 4.7-inch design with the powerful A15 Bionic chip, delivering exceptional performance for multitasking, gaming, and creative work. The device includes Touch id for secure authentication and offers a sleek, modern design.",
+            "price": 525,
+            "category": "Smartphones",
+            "image": "https://www.apple.com/v/iphone/compare/ah/images/overview/compare_iphoneSE_3rd_gen_red__p9edsyvyp6a2_large_2x.jpg"
+          },
+              {
+                "id": 29,
+                "name": "Apple Watch SE (2nd generation)",
+                "description": "The Apple Watch SE (2nd generation) features a Retina display and the S8 SiP chip, offering impressive performance and battery life. The device includes fall detection, GPS, and up to 18 hours of battery life, making it perfect for fitness enthusiasts and everyday use.",
+                "price": 249,
+                "category": "Smartwatches",
+                "image": "https://www.apple.com/v/iphone/compare/ah/images/overview/compare_iphoneSE_3rd_gen_starlight__bvj733gg7hde_large_2x.jpg"
+              },
+              {
+                "id": 30,
+                "name": "Apple Watch Series 10",
+                "description": "The Apple Watch Series 10 features a larger display that provides more room for notifications, apps, and other content. Powered by the new S10 SiP chip, it offers improved performance and efficiency. This model includes new health and wellness features such as advanced sleep tracking, blood oxygen monitoring, and ECG. With up to 20 hours of battery life, it ensures you stay connected and healthy throughout the day. The watch is also water-resistant up to 50 meters, making it perfect for swimming and other water activities.",
+                "price": 499,
+                "category": "Smartwatches",
+                "image": "https://www.apple.com/v/watch/compare/af/images/overview/compare_watch_series_10_aluminum_rose_gold__fafcjpggtey6_large_2x.jpg"
+              },
+              {
+                "id": 31,
+                "name": "Apple Watch Ultra 2",
+                "description": "The Apple Watch Ultra 2 is designed for extreme sports and outdoor adventures. It features a brighter display for better visibility in direct sunlight and a dual-frequency GPS for more accurate location tracking. The watch is built with a rugged titanium case and is water-resistant up to 100 meters. It includes advanced health and fitness features such as heart rate monitoring, blood oxygen levels, and ECG. With up to 36 hours of battery life, it can keep up with your most demanding activities.",
+                "price": 799,
+                "category": "Smartwatches",
+                "image": "https://www.apple.com/v/watch/compare/af/images/overview/compare_watch_ultra_2_titanium_black__b0uhmfldoiqa_large_2x.jpg"
+              },
+              {
+                "id": 32,
+                "name": "Apple Watch Series 9",
+                "description": "The Apple Watch Series 9 features an Always-On Retina display that ensures you can see your watch face at all times without raising your wrist. Powered by the S9 SiP chip, it offers smooth performance and improved battery life. The new double-tap control allows you to interact with your watch more easily. It includes comprehensive health and fitness tracking features such as heart rate monitoring, blood oxygen levels, and sleep tracking. With up to 18 hours of battery life, it is designed to keep up with your daily routine.",
+                "price": 399,
+                "category": "Smartwatches",
+                "image": "https://www.apple.com/v/watch/compare/af/images/overview/compare_watch_series_9_aluminum_midnight__e39g2cjw570i_large_2x.jpg"
+              },
+              {
+                "id": 33,
+                "name": "Apple Watch Ultra",
+                "description": "The original Apple Watch Ultra is built for durability and performance. It features a titanium case that is both lightweight and strong, and it is water-resistant up to 100 meters. The watch includes advanced health and fitness tracking features such as heart rate monitoring, blood oxygen levels, and ECG. With up to 36 hours of battery life, it is designed to last through your toughest workouts and adventures. The Ultra model also includes dual-frequency GPS for more accurate location tracking.",
+                "price": 699,
+                "category": "Smartwatches",
+                "image": "https://www.apple.com/v/watch/compare/af/images/overview/compare_watch_ultra_titanium_natural__fbfk23k9fo6e_large_2x.jpg"
+              },
+              {
+                "id": 34,
+                "name": "Apple Watch Series 8",
+                "description": "The Apple Watch Series 8 includes a temperature sensor that helps you track your body temperature throughout the day. It also features crash detection, which can automatically alert emergency services if you are involved in a serious accident. Powered by the S8 SiP chip, it offers smooth performance and improved battery life. The Always-On Retina display ensures you can see your watch face at all times. With up to 18 hours of battery life, it is designed to keep up with your daily routine.",
+                "price": 349,
+                "category": "Smartwatches",
+                "image": "https://www.apple.com/v/watch/compare/af/images/overview/compare_watch_series_8_aluminum_midnight__e2ksj23ggh0m_large_2x.jpg"
+              },
+              {
+                "id": 35,
+                "name": "AirPods 4",
+                "description": "The AirPods 4 offer up to 5 hours of audio on a single charge, and up to 30 hours of audio with the charging case. The USB-C charging case provides fast and convenient charging. These earbuds feature high-quality sound with deep bass and clear highs. They are designed for comfort and a secure fit, making them perfect for all-day wear. The AirPods 4 also include touch controls for easy access to music playback and calls.",
+                "price": 150,
+                "category": "Headphones",
+                "image": "https://www.apple.com/v/airpods/compare/g/images/overview/allmodels_airpods_4__bdts0cg3zlgy_large_2x.jpg"
+              },
+              {
+                "id": 36,
+                "name": "AirPods 4 Pro",
+                "description": "The AirPods 4 Pro feature high noise reduction and adaptive audio, providing an immersive listening experience. They offer up to 6 hours of audio on a single charge, and up to 30 hours of audio with the charging case. The transparency mode allows you to hear your surroundings while listening to music. These earbuds are designed for comfort and a secure fit, making them perfect for all-day wear. The AirPods 4 Pro also include touch controls for easy access to music playback and calls.",
+                "price": 215,
+                "category": "Headphones",
+                "image": "https://www.apple.com/v/airpods/compare/g/images/overview/allmodels_airpods_4__bdts0cg3zlgy_large_2x.jpg"
+              },
+              {
+                "id": 37,
+                "name": "AirPods Pro 2",
+                "description": "The AirPods Pro 2 offer high noise reduction and adaptive audio, providing an immersive listening experience. They feature transparency mode, which allows you to hear your surroundings while listening to music. With up to 6 hours of audio on a single charge, and up to 30 hours of audio with the charging case, they are designed for all-day use. The AirPods Pro 2 include touch controls for easy access to music playback and calls. They are also water and sweat resistant, making them perfect for workouts and outdoor activities.",
+                "price": 290,
+                "category": "Headphones",
+                "image": "https://www.apple.com/v/airpods/compare/g/images/overview/allmodels_airpods_pro_magsafe_chargingcase__bo9p1zbw5hjm_large_2x.jpg"
+              },
+              {
+                "id": 38,
+                "name": "AirPods Max",
+                "description": "The AirPods Max offer pro-level active noise cancellation and transparency mode, providing an immersive listening experience. They feature personalized spatial audio with dynamic head tracking, delivering a theater-like sound experience. Powered by the H1 chip, they offer smooth performance and always-on 'Hey Siri' functionality. With up to 20 hours of audio on a single charge, they are designed for all-day use. The AirPods Max are built with premium materials and a comfortable fit, making them perfect for long listening sessions.",
+                "price": 650,
+                "category": "Headphones",
+                "image": "https://www.apple.com/v/airpods/compare/g/images/overview/allmodels_airpods_max_smartcase__dlei2dqu21yu_large_2x.jpg"
+              }
+]
+}
+  
