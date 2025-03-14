@@ -73,7 +73,9 @@ const NavBar = ({ onSearch }) => {
             <Link to="/my-account">My Account</Link>
           </li>
           <li>
-            <CarWidget />
+            <Link to="/cart">
+              <CarWidget />
+            </Link>
           </li>
         </ul>
       </nav>

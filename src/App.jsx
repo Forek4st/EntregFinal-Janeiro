@@ -10,6 +10,7 @@ import Iphone from "./components/iphone/Iphone";
 import Watch from "./components/watch/Watch";
 import Airpods from "./components/airpods/AirPods.jsx";
 import MyAccount from "./components/account/MyAccount.jsx";
+import Cart from "./components/cart/Cart.jsx"; // Import Cart
 import { CartProvider } from "./context/CartContext";
 
 function App() {
@@ -36,6 +37,7 @@ function App() {
           <Route path="/airpods" element={<Airpods />} />
           <Route path="/my-account" element={<MyAccount />} />
           <Route path="/item/:id" element={<ItemDetailContainer />} />
+          <Route path="/cart" element={<Cart />} /> {/* Add route for Cart */}
           <Route
             path="*"
             element={

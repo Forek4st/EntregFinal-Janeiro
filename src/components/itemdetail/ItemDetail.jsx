@@ -44,6 +44,7 @@ const ItemDetail = () => {
         name: product.name,
         price: product.price,
         quantity,
+        image: product.image, // Ensure the image property is included
       });
     }
   };
