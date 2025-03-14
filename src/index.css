@@ -549,6 +549,17 @@ main.item-detail
   }
 }
 
+.my-account {
+  display: flex;
+  flex-direction: column;
+  margin: 100px auto;
+  text-align: center;
+  h2 {
+    margin-top: 3rem;
+    font-size: 5rem;
+  }
+}
+
 @media screen and (min-width: 1080px) and (max-width: 1600px) {
   main.item-container div.list-group {
     display: grid;
